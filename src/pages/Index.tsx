@@ -30,12 +30,17 @@ const Index = () => {
               <div className="flex flex-wrap gap-4">
                 <Link to="/auth">
                   <Button variant="hero" size="lg" className="text-base">
-                    Get Started
+                    Patient Sign In
                   </Button>
                 </Link>
                 <Link to="/doctors">
                   <Button variant="outline" size="lg" className="text-base">
                     Browse Doctors
+                  </Button>
+                </Link>
+                <Link to="/doctor/auth">
+                  <Button variant="secondary" size="lg" className="text-base">
+                    Doctor Portal
                   </Button>
                 </Link>
               </div>
