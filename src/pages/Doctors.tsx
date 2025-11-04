@@ -177,7 +177,7 @@ const Doctors = () => {
                     <div className="flex items-center gap-2 text-sm">
                       <DollarSign className="h-4 w-4 text-secondary" />
                       <span className="font-semibold">
-                        ${doctor.consultation_fee.toFixed(2)}
+                        KES {doctor.consultation_fee.toLocaleString()}
                       </span>
                       <span className="text-muted-foreground">consultation</span>
                     </div>
