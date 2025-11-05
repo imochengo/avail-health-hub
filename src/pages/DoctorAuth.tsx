@@ -14,8 +14,8 @@ const loginSchema = z.object({
 });
 
 const DoctorAuth = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("james.williams@telehealth.co.ke");
+  const [password, setPassword] = useState("Mycountry@20");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
