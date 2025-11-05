@@ -43,6 +43,11 @@ const Index = () => {
                     Doctor Portal
                   </Button>
                 </Link>
+                <Link to="/admin/dashboard">
+                  <Button variant="outline" size="lg" className="text-base">
+                    Admin Panel
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="relative lg:block">
