@@ -14,6 +14,8 @@ const loginSchema = z.object({
 });
 const DoctorAuth = () => {
   const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { toast } = useToast();
 
