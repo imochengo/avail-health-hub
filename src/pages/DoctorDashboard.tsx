@@ -25,7 +25,7 @@ interface Appointment {
   profiles: {
     full_name: string;
     phone: string;
-  };
+  } | null;
 }
 
 const DoctorDashboard = () => {
@@ -196,10 +196,10 @@ const DoctorDashboard = () => {
                     <div>
                       <CardTitle className="flex items-center gap-2">
                         <User className="h-5 w-5" />
-                        {appointment.profiles.full_name}
+                        {appointment.profiles?.full_name || "Patient (No Profile)"}
                       </CardTitle>
                       <CardDescription className="mt-1">
-                        {appointment.profiles.phone}
+                        {appointment.profiles?.phone || "No phone number"}
                       </CardDescription>
                     </div>
                     <Badge className={getStatusColor(appointment.status)}>
